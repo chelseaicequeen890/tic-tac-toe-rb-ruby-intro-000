@@ -6,7 +6,7 @@ WIN_COMBINATIONS = [
   [1, 4, 7],
   [2, 5, 8],
   [0, 4, 8],
-  [2, 4, 6],
+  [6, 4, 2]
 ]
 
 def display_board(board)
@@ -21,8 +21,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, index, player)
-  board[index] = player
+def move(board, index, current_player)
+  board[index] = current_player
 end
 
 def position_taken?(board, index)
